@@ -1,10 +1,5 @@
 /*
  * This won't work without display: contents on the :host of the Smart Component.
- * AppComponent is the grandparent of DumbTrigger and DumbResponder.
- * Parent works. Grandparent doesn't.
- * Proof is that DumbAgnostic, which is a direct child of AppComponent
- * does show up in grid-area "right", but the other Dumb components
- * do not appear in the "left" and "center" respectively.
  */
 :host {
 	padding: 1em;

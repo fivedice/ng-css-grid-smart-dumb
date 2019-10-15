@@ -1,27 +1,21 @@
 # NgCssGridSmartDumb
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+Demonstrates how to position dumb components inside of smart components that do not directly define the CSS Grid layout.
 
-## Development server
+This does not work for IE or Edge at all.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Server
 
-## Code scaffolding
+`ng serve` for most browsers.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+For IE: `npm run start:ie`
 
-## Build
+## Serve for remote
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+If you're on a Mac and want to see what IE and edge look like...
 
-## Running unit tests
+First, edit `package.json` and replace `{{YOUR_SERVER_NAME_HERE}}` with your server name.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+IE: `npm run start:remote:ie`
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Edge: `npm run start:remote`

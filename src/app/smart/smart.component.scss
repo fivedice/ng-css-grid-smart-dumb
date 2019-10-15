@@ -1,13 +1,18 @@
-/*
- * Just moving the grid-area assignments up to the smart component isn't
- * enough either. ViewEncapsulation is still preventing these definitions
- * from being interpreted according to the grid definition in AppComponent.
- * The only solution, now, is to move the grid definition to styles.scss.
- */
+:host {
+	/*
+   * Ignore this smart-component wrapper, allowing us to position dumb child components
+   * in the global CSS Grid layout!
+   * Not supported in IE or Edge at all!
+   * https: //caniuse.com/#search=display%3A%20contents
+   */
+	display: contents;
+}
+
+// Smart component decides where dumb components go in the global layout!
 app-dumb-trigger {
-	grid-area: 'left';
+	grid-area: b;
 }
 
 app-dumb-responder {
-	grid-area: 'center';
+	grid-area: c;
 }

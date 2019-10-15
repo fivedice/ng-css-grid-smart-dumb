@@ -1,3 +1,5 @@
+// Dumb components shouldn't decide where they go in the global layout!
+
 @keyframes wiggle {
 	0% {
 		transform: rotate(0deg);
@@ -19,5 +21,5 @@ div {
 
 .wiggle {
 	transform-origin: center center;
-	animation: wiggle 1s infinite;
+	animation: wiggle 0.2s infinite;
 }

@@ -1,0 +1,13 @@
+/*
+ * Just moving the grid-area assignments up to the smart component isn't
+ * enough either. ViewEncapsulation is still preventing these definitions
+ * from being interpreted according to the grid definition in AppComponent.
+ * The only solution, now, is to move the grid definition to styles.scss.
+ */
+app-dumb-trigger {
+	grid-area: 'left';
+}
+
+app-dumb-responder {
+	grid-area: 'center';
+}

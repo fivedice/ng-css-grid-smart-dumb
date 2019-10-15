@@ -1,0 +1,27 @@
+:host {
+	grid-area: center;
+}
+
+@keyframes wiggle {
+	0% {
+		transform: rotate(0deg);
+	}
+	33% {
+		transform: rotate(5deg);
+	}
+	66% {
+		transform: rotate(-5deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+div {
+	display: inline-block;
+}
+
+.wiggle {
+	transform-origin: center center;
+	animation: wiggle 1s infinite;
+}
